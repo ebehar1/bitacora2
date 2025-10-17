@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #222;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.navbar ul li {
+    margin: 5px 15px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: #00adb5;
+}
+
+.contenedor{
+    width: 400px;
+    height: 400px;
+    background-color: #000000;
+    margin-top: 50px;
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100%;          
+}
+ 
+.boton button{
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    margin-top: 800px ;
+}
+.texto{
+    width: 20%;
+    color: #1a1a2e;
+    font-weight: bold;
+}
+ 
+.texto2{
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+#cuadro1{
+    position: relative;
+    background-color: #688391;
+}
+
+#cuadro2{
+    position: relative;
+    background-color: #87a1ab;
+}
+ 
+#cuadro3{
+    position: relative;
+    background-color: #a7bcf7;
+}
+
+#cuadro4{
+    position: relative;
+    background-color: #c8dfe2;
+}
+ 
+#cuadro3 img {
+    width: 100%;      
+    height: 100%;    
+    object-fit: cover;
+}
+ 
+#cuadro3 .boton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

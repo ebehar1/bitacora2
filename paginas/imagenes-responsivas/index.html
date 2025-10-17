@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../Media Queris/index.html">Media Queries</a></li>
+            <li><a href="../Manipulacion_DOM/index.html">Manipulación DOM</a></li>
+            <li><a href="../Unidades_Relativas/index.html">Unidades relativas</a></li>
+            <li><a href="../imagenes-responsivas/index.html">Imágenes responsivas</a></li>
+            <li><a href="../Diseño_adaptativo/index.html">Sitios adaptativos</a></li>
+            <li><a href="../Flex/index.html">Flexbox</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="contenedor">
+        <img
+        src="recursos/imagen-1200w.jpg"
+        srcset="recursos/imagen-300w.jpg 300w,
+            recursos/imagen-600w.jpg 600w,
+            recursos/imagen-900w.jpg 900w,
+            recursos/imagen-1200w.jpg 1200w"
+        sizes="(max-width: 480px) 95vw,
+            (max-width: 768px) 85vw,
+            (max-width: 1200px) 1200px, 65vw"
+        alt="imagen responsiva"
+        class="imagen"
+        loading="lazy"
+        >
+    </div>
+        <picture class="contenedor-picture">
+            <source src="recursos/silksong.wadp" media="(max-width:600px)" type="wadp">
+            <source src="recursos/silksong.png" media="(max-width:600px)">
+            <!--Si el source es un contenedor especial para imagenes, podemos tener
+            multiples imagenes y dependiendo de la condicion que nosotros le demos
+            aparecera en un dispositivo u otro, esta condicion se da en su atributo 
+            media="" en donde debemos definir cuando queremos que aparezca, un ejemplo 
+            si quiero que aparezca cierta imaegen en movil pongo media="(max-width:400px)"
+            -->
+                <!--Imagen por default-->
+                <img src="recursos/imagen_4.jpg" alt="">
+        </picture>
+</body>
+</html>

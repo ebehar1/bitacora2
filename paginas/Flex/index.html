@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Tienda Online</title>
+</head>
+<body>
+    <header class="navbar-principal">
+        <nav class="navbar">
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../Media Queris/index.html">Media Queries</a></li>
+                <li><a href="../Manipulacion_DOM/index.html">Manipulación DOM</a></li>
+                <li><a href="../Unidades_Relativas/index.html">Unidades relativas</a></li>
+                <li><a href="../imagenes-responsivas/index.html">Imágenes responsivas</a></li>
+                <li><a href="../Diseño_adaptativo/index.html">Sitios adaptativos</a></li>
+                <li><a href="../Flex/index.html">Flexbox</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="cabecera">
+        <nav class="barra-de-navegacion">
+            <div class="titulo-barra-navegacion">
+                <i class="fa-solid fa-store"></i>
+                <span>Tienda Online</span>
+            </div>
+            <ul class="lista-opciones-menu">
+                <li><a href="#inicio"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+                <li><a href="#catalogo"><i class="fa-solid fa-shirt"></i><span>Catálogo</span></a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-envelope"></i><span>Contacto</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <section id="inicio" class="elemento-contenido">
+            <h1>Bienvenido a nuestra tienda</h1>
+            <p>Explora nuestros productos y disfruta de la mejor experiencia de compra en línea.</p>
+            <button class="boton-principal">Ver productos</button>
+        </section>
+
+        <section id="catalogo" class="elemento-contenido catalogo">
+            <div class="producto">
+                <img src="recursos/producto1.jpg" alt="Producto 1">
+                <h2>Camiseta Manga Corta</h2>
+                <p>$159 MXN</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="recursos/producto2.jpg" alt="Producto 2">
+                <h2>Jeans Holgados Mezclilla</h2>
+                <p>$449 MXN</p>
+                <button>Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="recursos/producto3.jpg" alt="Producto 3">
+                <h2>Suéter Manga Larga</h2>
+                <p>$349 MXN</p>
+                <button>Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section id="contacto" class="elemento-contenido contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas? Escríbenos y te responderemos lo antes posible.</p>
+            <form>
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-de-pagina">
+        <p>&copy; 2025 Tienda Online - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

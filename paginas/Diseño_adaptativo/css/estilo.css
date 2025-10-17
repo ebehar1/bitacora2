@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Trajan";
+    src: url("../recursos/Trajan\ Pro\ Regular.woff2") format(woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Minecraft";
+    src: url("../recursos/Minecrafter.Alt.woff2") format(woff2);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Benguiat";
+    src: url("../recursos/benguiat_[allfont.net].woff2") format(woff2);
+    font-weight: bold;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 10rem; 
+    font-family: "Benguiat";
+    color: #4ecdc4; 
+}

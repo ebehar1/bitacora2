@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Malvides";
+    src: url("../recursos/fonts/Malvides.woff2") format("woff2");
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: #222;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.navbar ul li {
+    margin: 5px 15px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: #00adb5;
+}
+
+body {
+    background-color: #f4f7fa; 
+    font-family: Arial, sans-serif;
+    color: #212121;
+    line-height: 1.6;
+    transition: background-color 0.5s ease;
+}
+
+.contenedor {
+    font-size: 50px;
+    background-color: #688391; 
+    color: white; 
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.unidad-em{
+    color: #ff6b6b; 
+    text-wrap: balance;
+    font-size: clamp(3em, 1vw, 3em); 
+    margin-bottom: 1em;
+}
+
+.unidad-rem{
+    font-size: 10rem; 
+    font-family: "Malvides";
+    color: #4ecdc4; 
+}
+
+.unidad-vw{
+    font-size: 10vw;
+    color: #f7b32b; 
+}
+
+.unidad-vh{
+    font-size: 10vh;
+    color: #1a535c;
+}
+
+.unidad-vmin{
+    font-size: 10vmin;
+    color: #ff9f1c;
+}
+
+.unidad-vmax{
+    font-size: 10vmax;
+    color: #6a4c93; 
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: aquamarine;
+    }
+}

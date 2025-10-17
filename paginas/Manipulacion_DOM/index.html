@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../Media Queris/index.html">Media Queries</a></li>
+            <li><a href="../Manipulacion_DOM/index.html">Manipulación DOM</a></li>
+            <li><a href="../Unidades_Relativas/index.html">Unidades relativas</a></li>
+            <li><a href="../imagenes-responsivas/index.html">Imágenes responsivas</a></li>
+            <li><a href="../Diseño_adaptativo/index.html">Sitios adaptativos</a></li>
+            <li><a href="../Flex/index.html">Flexbox</a></li>
+        </ul>
+    </nav>
+    </header>
+    <section id="cuadro1" class="contenedor">
+        <p id="texto" class="texto">
+            Lorem </p>
+        <div class="boton">
+            <button onclick="cambiarTexto()">Click</button>        
+        </div>
+    </section>
+ 
+    <section id="cuadro2" class="contenedor">
+       
+        <div class="boton">
+            <button onclick="cambiarColor()">Click</button>
+        </div>
+    </section>
+ 
+    <section id="cuadro3" class="contenedor">
+        <img id="foto" src="recursos/gato1.jpg" alt="">
+        <div class="boton">
+            <button onclick="cambiarImagen()">Click</button>
+        </div>
+    </section>
+ 
+    <section id="cuadro4" class="contenedor">
+        <p id="texto2" class="texto2">
+            Pequeño </p>
+        <div class="boton">
+            <button onclick="cambiarTamano()">Click</button>
+        </div>
+    </section>
+ 
+    <script>
+        var texto; //puede variar su valor en la ejecucion del programa
+        let variable;//son variables y los valores pueden cambiar dentro de nuestro programa
+        const constante = true;// son constantes y no se pueden modificar a lo largo del programa
+        let click = false;
+   
+        texto = "skjaskajskajskajskajskas";
+   
+        function cambiarTexto(){
+            //en JavaScript es === sirve para preguntar si lo que esta en la variable es igual al siguiente dato
+            if(click === false){
+                variable = document.getElementById("texto").textContent; //guardando el texto anterior
+                document.getElementById("texto").textContent = texto; // modifico y asigno el nuevp texto
+                click = true;
+            }else{
+                texto = document.getElementById("texto").textContent;
+                document.getElementById("texto").textContent = variable;
+                click = false;    
+            }
+        }
+ 
+        function cambiarColor(){
+            console.log(click);
+        document.getElementById("cuadro2").style.backgroundColor = "pink";
+    }
+        let img1="recursos/gato1.jpg";
+        let img2="recursos/gato2.jpg";
+        let cambiarimg=false;
+ 
+    function cambiarImagen(){
+                        if(cambiarimg ===false){
+                        document.getElementById("foto").src=img1;
+                        cambiarimg=true;
+            }else{
+                         document.getElementById("foto").src=img2;
+                        cambiarimg=false;
+        }
+    }
+   
+    let tamano = 16;
+    function cambiarTamano(){
+        tamano += 2;
+        document.getElementById("texto2").style.fontSize = tamano + "px";
+        }
+ 
+        </script>
+    </body>
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* Tipografías personalizadas */
+@font-face {
+  font-family: "Trajan";
+  src: url("../recursos/Trajan Pro Regular.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url("../recursos/Minecrafter.Alt.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Benguiat";
+  src: url("../recursos/benguiat_[allfont.net].woff2") format("woff2");
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background: #222;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: #00adb5;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+/* Introducción */
+.intro {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1rem;
+  background: #e9f6f7;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+/* --- Sección de unidades --- */
+.unidades {
+  padding: 2rem;
+  background: #cce5ff;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+.texto1 {
+  font-size: 1.2rem; /* usando rem */
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.texto2 {
+  font-size: 1.2em; /* usando em */
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.bloque-vh {
+  min-height: 30vh; /* usando vh */
+  background: #ddeeff;
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.texto3 {
+  font-size: 2vh; 
+  margin-top: 1rem;
+}
+
+/* --- Tipografías --- */
+.trajan {
+  font-family: "Trajan";
+  padding: 1.5rem;
+  background: #e0f0ff;
+  border-left: 6px solid #007f83;
+}
+.trajan h2 { font-size: 2rem; }
+
+.minecraft {
+  font-family: "Minecraft";
+  padding: 1.5rem;
+  background: #d0ebff;
+  border-left: 6px solid #00adb5;
+}
+.minecraft h2 { font-size: 2rem; }
+
+.benguiat {
+  font-family: "Benguiat";
+  padding: 1.5rem;
+  background: #c0e4ff;
+  border-left: 6px solid #007f83;
+}
+.benguiat h2 {
+  font-size: clamp(1.5rem, 3vw, 2.8rem); /* tamaño responsivo */
+}
+
+/* --- Imágenes responsivas --- */
+.imagenes {
+  padding: 2rem;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* --- Media Queries --- */
+@media (max-width: 480px) {
+  .intro, .unidades, .trajan, .minecraft, .benguiat, .imagenes {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .intro, .unidades, .trajan, .minecraft, .benguiat, .imagenes {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .intro, .unidades, .trajan, .minecraft, .benguiat, .imagenes {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño Adaptativo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="../Media Queris/index.html">Media Queries</a></li>
+            <li><a href="../Manipulacion_DOM/index.html">Manipulación DOM</a></li>
+            <li><a href="../Unidades_Relativas/index.html">Unidades relativas</a></li>
+            <li><a href="../imagenes-responsivas/index.html">Imágenes responsivas</a></li>
+            <li><a href="../Diseño_adaptativo/index.html">Sitios adaptativos</a></li>
+            <li><a href="../Flex/index.html">Flexbox</a></li>
+        </ul>
+    </nav>
+    <h1>Diseño Adaptativo: Tipografía e Imágenes Responsivas</h1>
+  </header>
+  <main>
+    <!-- Texto introductorio -->
+    <section class="intro">
+      <p>
+        En esta práctica se demuestra cómo aplicar unidades relativas, tipografías responsivas e imágenes adaptativas
+        para lograr que un sitio web se vea bien en computadora, tableta y móvil.
+      </p>
+    </section>
+
+    <!-- Sección de Unidades -->
+    <section class="unidades">
+      <h2 style="font-size: 2rem;">Ejemplo con <code>rem</code></h2>
+      <p class="texto1">
+        <strong>rem</strong> es relativo al elemento raíz (html).  
+        Ejemplo: si el <code>html</code> tiene <code>font-size: 20px</code>, entonces 1rem = 20px, 2rem = 40px.
+      </p>
+
+      <h3 style="font-size: 2em;">Ejemplo con <code>em</code></h3>
+      <p class="texto2">
+        <strong>em</strong> es relativo al contenedor padre.  
+        Ejemplo: si el padre tiene <code>font-size: 20px</code>, entonces 1em = 20px, 2em = 40px.
+      </p>
+
+      <div class="bloque-vh">
+        <h2>Ejemplo con <code>vh</code></h2>
+        <p class="texto3">
+          <strong>vh</strong> se adapta a la altura de la pantalla.  
+          Ejemplo: 50vh ocupa el 50% de la altura visible del dispositivo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tipografía personalizada -->
+    <section class="trajan">
+      <h2>Tipografía: Trajan (Font Squirrel)</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reprehenderit harum, 
+        debitis praesentium, veniam minima atque at, ab alias dolore odit vel omnis! 
+      </p>
+    </section>
+
+    <section class="minecraft">
+      <h2>Tipografía: Minecraft (DaFont)</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat doloremque ab, 
+        illum voluptatibus veritatis dicta fugiat impedit ipsa.
+      </p>
+    </section>
+
+    <section class="benguiat">
+      <h2>Tipografía: Benguiat (AllFont) con tamaño responsivo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate unde officiis 
+        ad rerum, iusto minus sed porro? Perspiciatis, nesciunt.
+      </p>
+    </section>
+
+    <!-- Imágenes responsivas -->
+    <section class="imagenes">
+      <h2>Ejemplo con srcset y sizes</h2>
+      <img
+        src="recursos/1200x1200.png"
+        srcset="
+          recursos/400x400.png 400w,
+          recursos/800x800.png 800w,
+          recursos/1200x1200.png 1200w
+        "
+        sizes="(max-width: 600px) 400px,
+               (max-width: 1000px) 800px,
+               1200px"
+        alt="Imagen adaptable con srcset"
+      >
+
+      <h2>Ejemplo con picture y source</h2>
+      <picture>
+        <source media="(max-width: 600px)" srcset="recursos/400x400-arte.png">
+        <source media="(min-width: 601px)" srcset="recursos/1200x1200-arte.png">
+        <img src="recursos/800x800-arte.png" alt="Imagen adaptable con picture">
+      </picture>
+    </section>
+  </main>
+</body>
+</html>
